@@ -13,6 +13,7 @@ while True:
 
 n1=int(n1)
 print(f"Your starting number is {n1}")
+print("")
 
 n2 = input("Give me an ending integer for the range: ")
 
@@ -26,6 +27,7 @@ while True:
 
 n2=int(n2)
 print(f"Your ending number is {n2}")
+print("")
 
 
 def add_all_integers(n1, n2):
@@ -35,9 +37,11 @@ def add_all_integers(n1, n2):
         total_sum = sum(range(n1,n2+1))
 
     else:
-        print("Your ending value is smaller than your starting value.")
-        print(f'Your starting integer will be {n2}.')
-        print(f'Your ending integer will be {n1}.')
+        print("Ooops, your ending value is smaller than your starting value.")
+        print("")
+        print(f'Your starting integer will now be {n2}.')
+        print(f'Your ending integer will now be {n1}.')
+        print("")
         total_sum = sum(range(n2,n1+1))
             
     return total_sum
